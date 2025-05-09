@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartEdu - Learn Smart!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚀 SmartEdu</h1>
+        <input type="text" id="searchInput" placeholder="Enter a topic...">
+        <button onclick="searchTopic()">Search</button>
+    </header>
+
+    <main>
+        <section id="recommendations"></section>
+        <section id="studyNotes"></section>
+        <section id="flashcards"></section>
+        <section id="quiz"></section>
+        <section id="chatbot">
+            <h2>💬 Chat with SmartBot</h2>
+            <div id="chatbox"></div>
+            <input type="text" id="chatInput" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter'){sendMessage()}">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="studyNotes.js"></script>
+    <script src="quiz.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
